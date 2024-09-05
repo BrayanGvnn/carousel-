@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav {
+  display: flex;
+  min-height: min-content;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #aaa7a7;
+  padding: 4px 16px;
+}
+
+.logo {
+  height: 64px;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style-type: none;
+  padding: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid #711468;
+  color: #711468;
+}
+
+.search-container {
+  position: relative;
+}
+
+.search-input {
+  height: 32px;
+  width: 256px;
+  border-radius: 12px;
+  padding-left: 8px;
+  padding-right: 32px;
+  font-size: 14px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #111827;
+}
+
+.account-icon {
+  font-size: 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.account-icon:hover {
+  color: #3b82f6;
+}
+
+.swiper-button-prev {
+  color: rgb(255, 255, 255);
+}
+.swiper-button-next {
+  color: aliceblue;
+}
+
+img {
+  border-radius: 10px;
+}
+
+
+/* src/components/Footer.css */
+.footer {
+  margin: 0 auto;
+  width: 100vw;
+}
+
+.footer-grid {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.mt {
+  margin-top: 16px;
+}
